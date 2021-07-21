@@ -4360,56 +4360,7 @@ Haymaking in the Highlands,John Thomas Hamilton Macallum,1878,1878,https://artuk
   [136 117  96]
   [136 117  96]
   [136 117  96]]]","[array([212, 217, 197], dtype=uint8), array([181, 184, 160], dtype=uint8), array([39, 26, 15], dtype=uint8), array([126, 126, 104], dtype=uint8), array([149, 119,  81], dtype=uint8), array([84, 66, 47], dtype=uint8), array([183, 164, 140], dtype=uint8), array([136, 117,  96], dtype=uint8), array([183, 151, 113], dtype=uint8), array([177, 173, 131], dtype=uint8), array([91, 69, 35], dtype=uint8), array([129, 121,  80], dtype=uint8), array([79, 75, 53], dtype=uint8), array([223, 209, 188], dtype=uint8), array([84, 77, 38], dtype=uint8)]","[0.4152605459057072, 0.2398169975186104, 0.04689205955334987, 0.040549007444168735, 0.03648573200992556, 0.03570719602977668, 0.03518300248138958, 0.03340260545905707, 0.026321339950372207, 0.02607320099255583, 0.02449441687344913, 0.01250620347394541, 0.010480769230769231, 0.010124069478908189, 0.006702853598014888]"
-Scottish Landscape,Samuel Bough,1878,1878,https://artuk.org/discover/artworks/scottish-landscape-83297/view_as/grid/search/has_image:on--region:scotland--work_type:painting--category:seas-and-coasts/sort_by/date_earliest/order/asc/page/23,https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/GL/GM/GL_GM_2360-001.jpg,oil on canvas,96.5,137.2,2360,"[[[177 174 154]
-  [177 174 154]
-  [177 174 154]
-  ...
-  [217 213 189]
-  [217 213 189]
-  [217 213 189]]
-
- [[177 174 154]
-  [177 174 154]
-  [177 174 154]
-  ...
-  [217 213 189]
-  [217 213 189]
-  [217 213 189]]
-
- [[177 174 154]
-  [177 174 154]
-  [177 174 154]
-  ...
-  [217 213 189]
-  [217 213 189]
-  [217 213 189]]
-
- ...
-
- [[135 125  82]
-  [135 125  82]
-  [135 125  82]
-  ...
-  [177 174 154]
-  [177 174 154]
-  [177 174 154]]
-
- [[ 99  68  33]
-  [ 99  68  33]
-  [ 99  68  33]
-  ...
-  [177 174 154]
-  [177 174 154]
-  [177 174 154]]
-
- [[ 99  68  33]
-  [ 99  68  33]
-  [ 99  68  33]
-  ...
-  [177 174 154]
-  [177 174 154]
-  [177 174 154]]]","[array([177, 174, 154], dtype=uint8), array([192, 171, 148], dtype=uint8), array([217, 213, 189], dtype=uint8), array([228, 210, 182], dtype=uint8), array([143, 122, 104], dtype=uint8), array([131, 130, 106], dtype=uint8), array([201, 170, 132], dtype=uint8), array([232, 207, 166], dtype=uint8), array([135, 125,  82], dtype=uint8), array([149, 118,  79], dtype=uint8), array([232, 219, 177], dtype=uint8), array([170, 159, 119], dtype=uint8), array([99, 68, 33], dtype=uint8), array([96, 71, 53], dtype=uint8), array([50, 22, 12], dtype=uint8)]","[0.2529516317016317, 0.17137237762237761, 0.1486946386946387, 0.07730769230769231, 0.06983974358974358, 0.05171328671328671, 0.04976689976689977, 0.04889277389277389, 0.03972610722610723, 0.02589160839160839, 0.017855477855477857, 0.016357808857808857, 0.012395104895104895, 0.00967074592074592, 0.007564102564102564]"
-St Ives Bay,John Brett,1878,1878,https://artuk.org/discover/artworks/st-ives-bay-83317/view_as/grid/search/has_image:on--region:scotland--work_type:painting--category:seas-and-coasts/sort_by/date_earliest/order/asc/page/23,https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/GL/GM/GL_GM_1733-001.jpg,oil on canvas,70.5,134.6,1733,"[[[195 166 120]
+Scottish Landscape,Samuel Bough,1878,1878,https://artuk.org/discover/artworks/scottish-landscape-83297/view_as/grid/search/has_image:on--region:scotland--work_type:painting--category:seas-and-coasts/sort_by/date_earliest/order/asc/page/23,https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/GL/GM/GL_GM_2360-001.jpg,oil on canvas,96.5,137.2,2360,"[[[195 166 120]
   [195 166 120]
   [195 166 120]
   ...
@@ -4458,6 +4409,55 @@ St Ives Bay,John Brett,1878,1878,https://artuk.org/discover/artworks/st-ives-bay
   [ 46  37  25]
   [ 46  37  25]
   [ 46  37  25]]]","[array([195, 166, 120], dtype=uint8), array([149, 121,  80], dtype=uint8), array([80, 65, 45], dtype=uint8), array([130, 108,  84], dtype=uint8), array([92, 71, 37], dtype=uint8), array([46, 37, 25], dtype=uint8), array([68, 65, 45], dtype=uint8), array([227, 201, 155], dtype=uint8), array([42, 38, 23], dtype=uint8), array([183, 166, 118], dtype=uint8), array([136, 126,  85], dtype=uint8)]","[0.2726623665480427, 0.18722419928825623, 0.1410120106761566, 0.09550934163701068, 0.062230871886120996, 0.05747553380782918, 0.05065613879003559, 0.04080960854092527, 0.03961298932384342, 0.027197508896797153, 0.025609430604982206]"
+St Ives Bay,John Brett,1878,1878,https://artuk.org/discover/artworks/st-ives-bay-83317/view_as/grid/search/has_image:on--region:scotland--work_type:painting--category:seas-and-coasts/sort_by/date_earliest/order/asc/page/23,https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/GL/GM/GL_GM_1733-001.jpg,oil on canvas,70.5,134.6,1733,"[[[177 174 154]
+  [177 174 154]
+  [177 174 154]
+  ...
+  [217 213 189]
+  [217 213 189]
+  [217 213 189]]
+
+ [[177 174 154]
+  [177 174 154]
+  [177 174 154]
+  ...
+  [217 213 189]
+  [217 213 189]
+  [217 213 189]]
+
+ [[177 174 154]
+  [177 174 154]
+  [177 174 154]
+  ...
+  [217 213 189]
+  [217 213 189]
+  [217 213 189]]
+
+ ...
+
+ [[135 125  82]
+  [135 125  82]
+  [135 125  82]
+  ...
+  [177 174 154]
+  [177 174 154]
+  [177 174 154]]
+
+ [[ 99  68  33]
+  [ 99  68  33]
+  [ 99  68  33]
+  ...
+  [177 174 154]
+  [177 174 154]
+  [177 174 154]]
+
+ [[ 99  68  33]
+  [ 99  68  33]
+  [ 99  68  33]
+  ...
+  [177 174 154]
+  [177 174 154]
+  [177 174 154]]]","[array([177, 174, 154], dtype=uint8), array([192, 171, 148], dtype=uint8), array([217, 213, 189], dtype=uint8), array([228, 210, 182], dtype=uint8), array([143, 122, 104], dtype=uint8), array([131, 130, 106], dtype=uint8), array([201, 170, 132], dtype=uint8), array([232, 207, 166], dtype=uint8), array([135, 125,  82], dtype=uint8), array([149, 118,  79], dtype=uint8), array([232, 219, 177], dtype=uint8), array([170, 159, 119], dtype=uint8), array([99, 68, 33], dtype=uint8), array([96, 71, 53], dtype=uint8), array([50, 22, 12], dtype=uint8)]","[0.2529516317016317, 0.17137237762237761, 0.1486946386946387, 0.07730769230769231, 0.06983974358974358, 0.05171328671328671, 0.04976689976689977, 0.04889277389277389, 0.03972610722610723, 0.02589160839160839, 0.017855477855477857, 0.016357808857808857, 0.012395104895104895, 0.00967074592074592, 0.007564102564102564]"
 "Girl with Pitchers, Summer Scene",George Henry Boughton,c.1883–1887,1885,https://artuk.org/discover/artworks/girl-with-pitchers-summer-scene-83307/view_as/grid/search/has_image:on--region:scotland--work_type:painting--category:seas-and-coasts/sort_by/date_earliest/order/asc/page/23,https://d3d00swyhr67nd.cloudfront.net/w944h944/collection/GL/GM/GL_GM_2631-001.jpg,oil on panel,53.3,35.6,2631,"[[[180 186 160]
   [180 186 160]
   [180 186 160]
