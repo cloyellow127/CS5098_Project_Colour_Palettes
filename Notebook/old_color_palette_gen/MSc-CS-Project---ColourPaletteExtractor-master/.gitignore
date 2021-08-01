@@ -1,9 +1,0 @@
-/.idea/
-/colourpaletteextractor/build/__main__/
-/colourpaletteextractor/dist/__main__/
-/colourpaletteextractor/dist/__main__
-/colourpaletteextractor/__main__.spec
-/venv/
-/ColourPaletteExtractor-Executables/
-/ColourPaletteExtractor.spec
-/colourpaletteextractor/model/dummyimagescript.py
