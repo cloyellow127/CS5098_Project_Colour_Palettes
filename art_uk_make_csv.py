@@ -33,3 +33,4 @@ if __name__ == "__main__":
     # print(os.path.isdir("/MSc-CS-Project---ColourPaletteExtractor-master/"))
     # timer = time.process_time()
     # print(time.process_time() - timer)
+    # pip freeze > requirements.txt
