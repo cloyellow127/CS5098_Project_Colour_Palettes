@@ -306,12 +306,15 @@ async def get_all_other(session, art_uk_df, n):
         
         # image_url
         if embeded_page.find('img', alt=re.compile(title)) is None:
+            # try:
             enlarged_img = embeded_page.find('img', {"alt": "Untitled"})
-            enlarged_img = enlarged_img.attrs['src']
+            enlarged_img = enlarged_img['src']
+            # except:
+                # enlarged_img = "problem here"
  
         else:
             enlarged_img = embeded_page.find('img', alt=re.compile(title))
-            enlarged_img = enlarged_img.attrs['src'] 
+            enlarged_img = enlarged_img['src'] 
             
 
         return [medium, height, width, accession_number, enlarged_img]
