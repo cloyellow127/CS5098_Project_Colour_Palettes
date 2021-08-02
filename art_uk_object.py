@@ -12,7 +12,7 @@ class art_uk_object:
 
     def __load_URL(self, url):
         self.url = url
-        page = requests.get(url)
+        page = requests.get(self.url)
         soup = BeautifulSoup(page.content, 'html.parser')
         page.close()
 
@@ -77,24 +77,21 @@ class art_uk_object:
 
         loop = asyncio.get_event_loop()
         loop.run_until_complete(set_all_other(self.img_elements, self.art_uk_df, self.num_of_img))
-
-        # loop = asyncio.get_event_loop()
-        # loop.run_until_complete(set_all_colors(self.img_elements, self.color_palette_df))
     
     def get_colours(self, filename):
         loop = asyncio.get_event_loop()
         loop.run_until_complete(self.__set_all_colors(filename))
 
-    
-
     async def __set_all_colors(self, filename):
         tasks = []
         for number in range(self.num_of_img):
             filepath = filename + "/" + self.art_uk_df["Accession_number"][number] + ".jpg"
-            tasks.append(asyncio.ensure_future(get_colors(filepath, number)))
+            if Path(filepath).is_file():
+                tasks.append(asyncio.ensure_future(get_colors(filepath, number)))
+
         await asyncio.gather(*tasks)
         
-        for n in range(self.num_of_img):
+        for n in range(len(tasks)):
             temp_df = pd.DataFrame(columns = ['R', 'G', 'B', 'freqency', 'id'])
             temp_df['R'] = [tasks[n].result()[0][x][0] for x in range(len(tasks[n].result()[0]))]
             temp_df['G'] = [tasks[n].result()[0][x][1] for x in range(len(tasks[n].result()[0]))]
@@ -119,7 +116,7 @@ class art_uk_object:
 
     def set_all_images(self):
         self.num_of_img = get_number_all_art(self.url)
-        self.__load_URL(get_spec_img_url(self.url, self.num_of_img))
+        self.__load_URL(get_all_img_url(self.url))
     
     def set_number_images(self, number):
         self.num_of_img = number
@@ -128,6 +125,8 @@ class art_uk_object:
     def get_num_of_img(self):
         # return int: the number of images the user wants
         return self.num_of_img
+
+
 
 async def get_colors(path, n):
     savepath = Path(path)
@@ -168,7 +167,7 @@ def get_all_img_url(url):
     num_per_page = current_num_img / page_number
     
     max_page = int(number_all_art / num_per_page)
-    return url.replace(url.split("/")[-1], str(max_page + 1))
+    return url[:-1] + str(max_page + 1)
 
 def get_spec_img_url(url, number):
     # param str url: the URL of the Art UK search result page
@@ -184,7 +183,7 @@ def get_spec_img_url(url, number):
     
     num = int(number / num_per_page)
     max_page = int(number_all_art / num_per_page)
-    return url.replace(url.split("/")[-1], str(min((num + 1), (max_page + 1))))
+    return url[:-1] + str(min((num + 1), (max_page + 1)))
 
 def get_number_all_art(url):
     # param str url: the URL of the Art UK search result page
@@ -283,6 +282,11 @@ async def get_all_other(session, art_uk_df, n):
         all_info = embeded_page.find('div', {'class' : 'masonry_details'})
         items = all_info.findAll('div', {'class' : 'masonry-item'})
 
+        medium = np.nan
+        height = np.nan
+        width = np.nan
+        accession_number = np.nan
+
         # Title
         title = str(art_uk_df['Title'][n])
         if "(" in title:
@@ -303,18 +307,22 @@ async def get_all_other(session, art_uk_df, n):
             # Accession Number
             elif tag.findNext('h5').text == "Accession number":
                 accession_number = tag.findNext('h5').findNext('p').text.replace('/', '_').replace(':', '_')
-        
+            
+
         # image_url
         if embeded_page.find('img', alt=re.compile(title)) is None:
-            # try:
-            enlarged_img = embeded_page.find('img', {"alt": "Untitled"})
-            enlarged_img = enlarged_img['src']
-            # except:
-                # enlarged_img = "problem here"
+            try:
+                enlarged_img = embeded_page.find('img', {"alt": "Untitled"})
+                enlarged_img = enlarged_img['src']
+            except:
+                enlarged_img = np.nan
  
         else:
-            enlarged_img = embeded_page.find('img', alt=re.compile(title))
-            enlarged_img = enlarged_img['src'] 
+            try:
+                enlarged_img = embeded_page.find('img', alt=re.compile(title))
+                enlarged_img = enlarged_img['src']
+            except:
+                enlarged_img = np.nan
             
 
         return [medium, height, width, accession_number, enlarged_img]
@@ -347,7 +355,8 @@ async def download_All(img_elements, folder_name, art_uk_df, num_of_img):
 
     for number in range(num_of_img):
         savepath = Path(folder_name + "/" + str(art_uk_df["Accession_number"][number]) + ".jpg")
-        tasks.append(asyncio.ensure_future(get_img(art_uk_df["img_URL"][number], savepath)))
+        if art_uk_df["img_URL"][number] is not np.nan:
+            tasks.append(asyncio.ensure_future(get_img(art_uk_df["img_URL"][number], savepath)))
     
     await asyncio.gather(*tasks)
 
