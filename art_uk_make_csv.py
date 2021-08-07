@@ -1,6 +1,6 @@
 from art_uk_object import *
-import art_uk_object as auo
-
+from art_uk_object import art_uk_object
+import functions as fn
 def main():
     if len(sys.argv) != 4:
         print("Usage: python art_uk_viewer.py <number of images> <name of csv> <URL>")
@@ -24,8 +24,8 @@ def main():
         sys.exit()
 
     art_uk.create_artuk_df()
-    art_uk.download(file_name)
-    art_uk.get_colours(file_name)
+    # art_uk.download(file_name)
+    # art_uk.get_colours(file_name)
     art_uk.export(file_name)
 
 if __name__ == "__main__":
