@@ -24,8 +24,8 @@ def main():
         sys.exit()
 
     art_uk.create_artuk_df()
-    # art_uk.download(file_name)
-    # art_uk.get_colours(file_name)
+    art_uk.download(file_name)
+    art_uk.get_colours(file_name)
     art_uk.export(file_name)
 
 if __name__ == "__main__":
