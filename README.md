@@ -16,7 +16,9 @@ $ pip install -r requirements.txt
 To run Art UK data extraction tool, open command line where art_uk_scrape.py is located, then run:
 ```
 $ python art_uk_scrape.py (number of images) (Name for files and folder generation) (art UK search URL)
+```
   or
+```
 $ python art_uk_scrape.py all (Name for files and folder generation) (art UK search URL)
 ```
 To view the jupyter projects, open jupyter notebook using command line in the top diretory with:
