@@ -9,6 +9,7 @@ Only tested on Windows 10
 pip install -r /requirements.txt
 ```
 This installs all the python librabies needed.
+
 3) Usage:
 To run Art UK data extraction tool, open command line where art_uk_scrape.py is located, then run:
 ```
