@@ -17,7 +17,7 @@ To run Art UK data extraction tool, open command line where art_uk_scrape.py is 
 ```
 $ python art_uk_scrape.py (number of images) (Name for files and folder generation) (art UK search URL)
 ```
-  or
+Or use 'all' to get all images.
 ```
 $ python art_uk_scrape.py all (Name for files and folder generation) (art UK search URL)
 ```
