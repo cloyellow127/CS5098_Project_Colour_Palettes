@@ -24,4 +24,5 @@ To view the jupyter projects, onpen jupyter notbook using command line in the to
 >>> jupyter notebook
 ```
 Then select the .ipynb files in the 'Notebook' folder and run cells using the Jupyter notebook interface. Run all cells at once or 'Ctrl+Enter' to run individual cell.
-4)
+
+4) Credits:
