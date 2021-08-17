@@ -4,11 +4,13 @@ This project has only been tested on Windows 10, it consist of an Art UK data ex
 
 2) Installation:
 - requires python, preferably the lastest version.
-Only tested on Windows 10
+- Only tested on Windows 10
+
+This installs all the python librabies needed.
 ```
 pip install -r /requirements.txt
 ```
-This installs all the python librabies needed.
+
 
 3) Usage:
 To run Art UK data extraction tool, open command line where art_uk_scrape.py is located, then run:
