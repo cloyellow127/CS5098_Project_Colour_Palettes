@@ -27,7 +27,7 @@ Then select the .ipynb files in the 'Notebook' folder and run cells using the Ju
 
 4) Credits:
 
-Specical thanks to Tim :)
+Special thanks to Tim :)
 
 Author: PurpleCrumpets https://github.com/PurpleCrumpets
 
@@ -36,3 +36,11 @@ Project: ColourPaletteExtractor https://github.com/PurpleCrumpets/MSc-CS-Project
 ColourPaletteExtractor Copyright (C) 2021  Tim Churchfield
 
 License https://github.com/PurpleCrumpets/MSc-CS-Project---ColourPaletteExtractor/blob/master/LICENCE.md
+
+5) License:
+```
+CS5098_Project_Colour_Palettes Analysing Colour Palettes from Paintings from Paintings Copyright (C) 2021  Colman Lo
+This program comes with ABSOLUTELY NO WARRANTY; for details see LICENCE.md.
+This is free software, and you are welcome to redistribute it
+under certain conditions; see LICENCE.md for details.
+```
